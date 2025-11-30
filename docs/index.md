@@ -1,19 +1,21 @@
 # Introduction
 
-!!! abstract "Introduction to Power Shell 7"
+!!! abstract "Introduction to Hyper-V on the desktop"
 
-You have already learned how to use the old command prompt (CLI) in Windows, and you should appreciate that it is a bit archaic and unintuitive. In an OS which has been in use for over 30 years, Microsoft must maintain consistency with the bad and uninformed decisions of a generation ago.
+In our courses, desktop virtualization is done using VMware Workstation or Microsoft Hyper-V. 
+Very few students/professionals are using Linux desktop, so we do not cover it.
+Since the move to the Mx chips, we believe the MAC platform is no longer suitable for teaching private cloud.
 
-Not just that; the DOS/Windows command was originally designed to be simple for the average non-technical user to operate a computer. In the 1970s and 80s, for the first time is history, people who were not computer scientists were working directly with computers.
+In these notes, I am looking at Microsoft Hyper-V technology and we refer to these technologies as Virtual Machine Managers (VMMs). 
 
-A CLI has no built-in menus, no way to provide hints and assistance to users as to what commands exist and how to use them. Microsoft knew they needed something more powerful and flexible, to give the sort of functionality Linux administrators were used to. 
+This is education not training, however, I do audit and maintain some cross compatibility with industry certifications. 
+The work beginning with these notes uses Microsoft Windows 10/11 and the training courses introducing this are; 98-365 Fundamentals 98-366 Network fundamentals 98-367 Security fundamentals. 
+I’m going to assume basic competence with Windows, and you should review the content of these training courses to get an idea of some of the basics. 
 
-In the post MS-DOS era, all the development effort of Microsoft went into making an intuitive graphical user interface (GUI), not into enhancing the command prompt. In Windows, you interface with the system through the Application Programmers Interface (API), which was intended for calling from C and C++, not from a command line. Windows is tough to program even in C! Yet the CLI is how most administrators want to configure things; it is repeatable, predictable, and economical. Another problem is that Windows, most modern operating system, and programming languages, are object oriented. CLIs do not manipulate objects, they manipulate text files.
+Specifically looking at
 
-Around 2000, Microsoft ran an internal study to see what it most needed to do to improve its server products. Management tools, in particular the CLI, was one of the priorities identified and the issues mentioned above had to be considered. The obvious and easy thing to do would be to use existing shell commands and an existing language like the Unix Bash shell. However, none of these shells were object based. Every platform had to deal with these issues, and this led to the Distributed Management Task Force [1] being set up and the establishment of a Common Information Model (CIM) for management objects. Microsoft implemented this as Windows Management Instrumentation (WMI )and as you get into PowerShell, you will use this extensively.
+- Hyper- V on Windows 10 70-697 MSCA Windows 10
 
-Microsoft had already moved their entire platform to .NET, and it made sense to base the new language around the same concepts. The .NET framework is self-describing; that is the objects have a definition of their structure within them. It also meant the new language already had access to the entire set of libraries within .NET. 
-
-In more recent years, PowerShell has become cross-platform, running on Windows, Linux and MacOS. 
-
-The public cloud platform Azure also uses PowerShell.
+In this document, there are several key terms. These will be underlined. You may need to look up these terms to get a full understanding of them. 
+Commands are generally shown in bold.
+In these notes, an ISO file is an image of a DVD used for installation purposes.
