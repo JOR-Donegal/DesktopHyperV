@@ -6,7 +6,7 @@ In our courses, desktop virtualization is done using VMware Workstation or Micro
 Very few students/professionals are using Linux desktop, so we do not cover it.
 Since the move to the Mx chips, we believe the MAC platform is no longer suitable for teaching private cloud.
 
-In these notes, I am looking at Microsoft Hyper-V technology and we refer to these technologies as Virtual Machine Managers (VMMs). 
+In these notes, I am looking at Microsoft Hyper-V technology and we refer to the software which implements these technologies as Virtual Machine Managers (VMMs). 
 
 This is education not training, however, I do audit and maintain some cross compatibility with industry certifications. 
 The work beginning with these notes uses Microsoft Windows 10/11 and the training courses introducing this are; 98-365 Fundamentals 98-366 Network fundamentals 98-367 Security fundamentals. 
